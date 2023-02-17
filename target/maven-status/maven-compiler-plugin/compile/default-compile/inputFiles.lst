@@ -1,7 +1,11 @@
 C:\Users\martin.fischer\laboratory\java\springboot-testlab\springboot-lab\src\main\java\at\horn1347\springbootlab\model\User.java
 C:\Users\martin.fischer\laboratory\java\springboot-testlab\springboot-lab\src\main\java\at\horn1347\springbootlab\service\impl\UserServiceImpl.java
-C:\Users\martin.fischer\laboratory\java\springboot-testlab\springboot-lab\src\main\java\at\horn1347\springbootlab\rest\controller\UserController.java
+C:\Users\martin.fischer\laboratory\java\springboot-testlab\springboot-lab\src\main\java\at\horn1347\springbootlab\rest\controller\UserRestController.java
+C:\Users\martin.fischer\laboratory\java\springboot-testlab\springboot-lab\src\main\java\at\horn1347\springbootlab\rest\controller\RestController.java
 C:\Users\martin.fischer\laboratory\java\springboot-testlab\springboot-lab\src\main\java\at\horn1347\springbootlab\service\UserService.java
+C:\Users\martin.fischer\laboratory\java\springboot-testlab\springboot-lab\src\main\java\at\horn1347\springbootlab\rest\controller\DepartmentRestController.java
+C:\Users\martin.fischer\laboratory\java\springboot-testlab\springboot-lab\src\main\java\at\horn1347\springbootlab\service\Service.java
 C:\Users\martin.fischer\laboratory\java\springboot-testlab\springboot-lab\src\main\java\at\horn1347\springbootlab\SpringbootLabApplication.java
-C:\Users\martin.fischer\laboratory\java\springboot-testlab\springboot-lab\src\main\java\at\horn1347\springbootlab\service\BaseService.java
+C:\Users\martin.fischer\laboratory\java\springboot-testlab\springboot-lab\src\main\java\at\horn1347\springbootlab\rest\controller\impl\UserRestControllerImpl.java
+C:\Users\martin.fischer\laboratory\java\springboot-testlab\springboot-lab\src\main\java\at\horn1347\springbootlab\model\Department.java
 C:\Users\martin.fischer\laboratory\java\springboot-testlab\springboot-lab\src\main\java\at\horn1347\springbootlab\repository\UserRepository.java

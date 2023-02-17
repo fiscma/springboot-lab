@@ -12,14 +12,16 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/api/user")
+@CrossOrigin(origins = "https://localhost:8088")
 public class UserRestControllerImpl implements UserRestController {
 
     @Autowired
     UserService service;
 
     @Override
-    @PostMapping("/save/{name}")
+    @CrossOrigin(origins = "http://localhost:8080")
+    @PostMapping("/put/{name}")
     public ResponseEntity<User> save(@PathVariable String name) {
         User user = new User();
         user.setUserName(name);
@@ -28,7 +30,7 @@ public class UserRestControllerImpl implements UserRestController {
     }
 
     @Override
-    @GetMapping("/find/{name}")
+    @GetMapping("/get/{name}")
     public ResponseEntity<User> findByName(@PathVariable String name) {
         Optional<User> user = service.findUserByName(name);
         if (user.isPresent()) {
@@ -49,7 +51,7 @@ public class UserRestControllerImpl implements UserRestController {
     }
 
     @Override
-    @GetMapping("/find/all")
+    @GetMapping("/get")
     public ResponseEntity<List<User>> findAll() {
         List<User> users = service.findAll();
         if (users.isEmpty()) {
