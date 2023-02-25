@@ -41,8 +41,10 @@ public class UserRestControllerImpl implements UserRestController {
     }
 
     @Override
-    public ResponseEntity<User> save(User entity) {
-        return null;
+    @PostMapping("/update")
+    public ResponseEntity<User> save(@RequestBody User entity) {
+        User user = service.save(entity);
+        return new ResponseEntity<>(user, HttpStatus.OK);
     }
 
     @Override
@@ -54,10 +56,6 @@ public class UserRestControllerImpl implements UserRestController {
     @GetMapping("/get")
     public ResponseEntity<List<User>> findAll() {
         List<User> users = service.findAll();
-        if (users.isEmpty()) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        } else {
-            return new ResponseEntity<>(users, HttpStatus.OK);
-        }
+        return new ResponseEntity<>(users, HttpStatus.OK);
     }
 }

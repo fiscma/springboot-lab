@@ -17,8 +17,14 @@ server:
     whitelabel:
       enabled: false
 spring:
+  application:
+    name: SpringBootLab
+  thymeleaf:
+    cache: false
+    enabled: true
+    prefix: classpath:/templates/
   datasource:
-    url: jdbc:mysql://localhost:3306/springlab
+    url: jdbc:mysql://localhost:3306/springboot-lab
     username: springlab
     password: springlab
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -29,5 +35,3 @@ spring:
   session:
     jdbc:
       initialize-schema: always
-  security:
-    en

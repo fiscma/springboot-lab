@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootLabApplication<springboot-lab>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "at.horn1347.springbootlab.SpringbootLabApplication",
+            "projectName": "springboot-lab",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
