@@ -4,7 +4,9 @@ import at.horn1347.springbootlab.model.User;
 import at.horn1347.springbootlab.rest.controller.UserRestController;
 import at.horn1347.springbootlab.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,7 +15,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/user")
-@CrossOrigin(origins = "https://localhost:8088")
+@CrossOrigin(origins = "*")
 public class UserRestControllerImpl implements UserRestController {
 
     @Autowired
@@ -54,8 +56,9 @@ public class UserRestControllerImpl implements UserRestController {
 
     @Override
     @GetMapping("/get")
+    @CrossOrigin(origins="*")
     public ResponseEntity<List<User>> findAll() {
         List<User> users = service.findAll();
-        return new ResponseEntity<>(users, HttpStatus.OK);
+        return ResponseEntity.status(HttpStatus.OK).body(users);
     }
 }
